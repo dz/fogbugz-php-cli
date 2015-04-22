@@ -2,10 +2,10 @@
 ————————————————————————————————————————————————————————————————————————————————
 {{filterTitle|pad(80, "center")}}
 ————————————————————————————————————————————————————————————————————————————————
-<heading>  ID    Status   Est  Assigned     Title                                        </heading>
+<heading>  ID        Status   Priority   Assigned     Title                                        </heading>
 ————————————————————————————————————————————————————————————————————————————————
 {% for case in cases %}
- {{"[%d]"|format(case.id)|pad(10, "left")|style("info")}} {{case.status|pad(8, "left")|style(case.statusFormat)}} {{case.estimate|pad(4, "left")}}{{case.assigned|pad(12, "left")}} {{case.title|pad(46, "left")}}</fire>
+ {{"%d"|format(case.id)|pad(10, "left")|style("info")}} {{case.status|pad(8, "left")|style(case.statusFormat)}} {{case.priority|pad(10, "left")}} {{case.assigned|pad(12, "left")}} {{case.title|pad(46, "left")}}</fire>
 {% endfor %}
 {% if cases|length == 0%}
   <notice>No cases for this filter</notice>
