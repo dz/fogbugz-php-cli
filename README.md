@@ -13,10 +13,10 @@ and password. It will store an API token in a .fogbugz.yml file.
 ## Help
 
     FogBugz Command Line Client version 1.2.5 by Craig Davis
-    
+
     Usage:
       [options] command [arguments]
-    
+
     Options:
       --help           -h Display this help message.
       --quiet          -q Do not output any message.
@@ -25,7 +25,7 @@ and password. It will store an API token in a .fogbugz.yml file.
       --ansi              Force ANSI output.
       --no-ansi           Disable ANSI output.
       --no-interaction -n Do not ask any interactive question.
-    
+
     Available commands:
       assign       Assign a case to a different user
       cases        Show cases for the current filter
@@ -55,7 +55,7 @@ and password. It will store an API token in a .fogbugz.yml file.
       unstar       Remove the star from a case
       version      Show version information
       view         View a case by case number
-    
+
 ## Setup
 
 You don't have to clone this repo. You can [download the phar file][dlfb] and save it
@@ -103,7 +103,7 @@ linters, and then finally build the phar file.
 
 
 [date]: http://us3.php.net/date_default_timezone_get
-[dlfb]: https://github.com/there4/fogbugz-php-cli/raw/master/fb
+[dlfb]: https://github.com/dz/fogbugz-php-cli/raw/master/fb
 [sc]: http://symfony.com/doc/current/components/console.html
 [composer]: http://getcomposer.org/
 [pake]: https://github.com/indeyets/pake/wiki
